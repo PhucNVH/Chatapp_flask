@@ -1,4 +1,4 @@
-var serverAddr = "10.228.240.33";
+var serverAddr = "10.23.65.1";
 var serverPort = "4200";
 var socket = null;
 
