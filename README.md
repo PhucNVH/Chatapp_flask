@@ -24,8 +24,8 @@
 
 ### References
 
-[1][webrtc documents](https://webrtc.org/start "WebRTC Documents")
-[2][webrtc infrastructure](https://www.html5rocks.com/en/tutorials/webrtc/infrastructure "WebRTC infrastructure")
-[3][websocet - python documents](https://websockets.readthedocs.io/en/stable/intro.html "WebSocet - Python Documents")
-[4][webrtc tutoral](https://websitebeaver.com/insanely-simple-webrtc-video-chat-using-firebase-with-codepen-demo "WebRTC tutoral")
-[5][tim hiểu nat stun turn](https://kipalog.com/posts/WebRTC-basic---Phan-1--Tim-hieu-ve-NAT--STUN--TURN-vs-ICE "Tim hiểu NAT STUN TURN")
+[1] [WebRTC Documents](https://webrtc.org/start "WebRTC Documents")
+[2] [WebRTC infrastructure](https://www.html5rocks.com/en/tutorials/webrtc/infrastructure "WebRTC infrastructure")
+[3] [WebSocet - Python Documents](https://websockets.readthedocs.io/en/stable/intro.html "WebSocet - Python Documents")
+[4] [WebRTC tutoral](https://websitebeaver.com/insanely-simple-webrtc-video-chat-using-firebase-with-codepen-demo "WebRTC tutoral")
+[5] [Tim hiểu NAT STUN TURN](https://kipalog.com/posts/WebRTC-basic---Phan-1--Tim-hieu-ve-NAT--STUN--TURN-vs-ICE "Tim hiểu NAT STUN TURN")
