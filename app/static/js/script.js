@@ -1,4 +1,4 @@
-var serverAddr = "10.23.65.1";
+var serverAddr = "10.20.72.51";
 var serverPort = "4200";
 var socket = null;
 
@@ -13,7 +13,7 @@ var currentFile;
 var incomingFile = {};
 var receivedSize = 0;
 var fileReader = new FileReader();
-const BYTES_PER_CHUNK = 1200;
+const BYTES_PER_CHUNK = 4800;
 var currentChunk;
 file.onchange = function() {
   currentFile = this.files[0];
@@ -62,6 +62,8 @@ var configuration = {
 
 function handleMessage(data) {
   switch (data.type) {
+    case "userConnect":
+      alert(data.message);
     case "reject":
       handleReject(data.from);
       break;

@@ -22,7 +22,7 @@ def startWS():
 
 
 def findClient(id, userList):
-    for user in userList:
+    for user in userList[::-1]:
         if user['socketID'] == id:
             return user['socket']
 
@@ -56,6 +56,15 @@ async def notify_users(id):
 
 
 async def login(websocket, id):
+    for user in USERS:
+        print(user['socketID'])
+        if user['socketID'] == id:
+            conn = findClient(id, USERS)
+            if conn:
+                await conn.send(json.dumps(
+                    {"type": "userConnect", "message": "Connection interrupted"}))
+                await conn.close()
+    #             # USERS.remove({"socketID": id, "socket": conn})
     USERS.append({"socketID": id, "socket": websocket})
     await websocket.send(json.dumps({"type": "connect", "id": id}))
     if USERS:
